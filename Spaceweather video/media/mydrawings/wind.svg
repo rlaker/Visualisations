@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg2640"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="wind.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2642"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.0482005"
+     inkscape:cx="-74.890253"
+     inkscape:cy="271.41754"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g3221" />
+  <defs
+     id="defs2637" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3221"
+       style="fill:#000000;stroke:#000000;stroke-opacity:1">
+      <ellipse
+         style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         id="path2735"
+         cx="48.191109"
+         cy="82.995789"
+         rx="18.91947"
+         ry="8.7457933" />
+      <ellipse
+         style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+         id="ellipse3015"
+         cx="48.191109"
+         cy="112.09995"
+         rx="18.91947"
+         ry="8.7457933" />
+      <path
+         style="fill:#000000;stroke:none;stroke-width:0.261931px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 29.104784,82.391129 0.179621,30.070411 37.900101,0.34763 V 82.217313 Z"
+         id="path3050" />
+      <path
+         style="fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 17.491586,155.81791 7.228666,3.39122 17.402343,-39.44531 -7.585636,-1.96334 z"
+         id="path3052" />
+      <path
+         style="fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 62.157601,53.679536 6.6709,2.945011 -9.131945,20.45721 -7.036118,-2.208646 z"
+         id="path3054" />
+    </g>
+  </g>
+</svg>
