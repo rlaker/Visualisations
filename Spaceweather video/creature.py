@@ -1,3 +1,8 @@
+"""
+Uses code and ideas from https://github.com/Elteoremadebeethoven/MyAnimations/tree/master/omega_creature
+"""
+
+
 from manim import *
 import os
 import warnings
