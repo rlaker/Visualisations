@@ -4,7 +4,7 @@ Code for animations I have made, which can be seen on my [website](https://www.r
 
 ## What is the Solar Wind and why should you care?: 
 
-[![Youtube Thumbnail](https://img.youtube.com/vi/jQ8dZwTw8wQ/0.jpg)](https://youtu.be/rI2yBMnZMpU)
+<p align="center"><img src="./thumbnail.png" alt="What is Space Weather and why should you care?" href="https://youtu.be/rI2yBMnZMpU" width="600"/></p>
 
 I made this animation for the Faculty of Natural Science [Showcase 2021](https://www.imperial.ac.uk/natural-sciences/research/showcases-seminars/2021/). I used [ManimCE](https://www.manim.community/) which is based on Grant Sanderson's excellent [Manim code](https://github.com/3b1b/manim).
 
