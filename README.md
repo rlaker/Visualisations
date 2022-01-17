@@ -5,7 +5,7 @@ Code for animations I have made, which can be seen on my [website](https://www.r
 ## Interactive Orbits
 An [interactive figure](https://www.ronanlaker.com/vis/orbits/) to look at spacecraft orbits for reference.
 
-<p align="center"><img src="./Interactive Orbits/orbits_screenshot.png" alt="Interactive Orbits example" href="https://www.ronanlaker.com/vis/orbits" width="600"/></p>
+<p align="center"><img src="./Interactive Orbits/orbits_screenshot.png" alt="Interactive Orbits example" href="https://www.ronanlaker.com/vis/orbits/" width="600"/></p>
 
 ## What is the Solar Wind and why should you care?: 
 
