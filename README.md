@@ -9,7 +9,7 @@ An [interactive figure](https://www.ronanlaker.com/vis/orbits/) to look at space
 
 ## What is the Solar Wind and why should you care?: 
 
-<p align="center"><img src="./Spaceweather%20video/thumbnail.png" alt="What is Space Weather and why should you care?" href="https://youtu.be/rI2yBMnZMpU" width="600"/></p>
+<p align="center"><img src="./Spaceweather video/thumbnail.png" alt="What is Space Weather and why should you care?" href="https://youtu.be/rI2yBMnZMpU" width="600"/></p>
 
 I made this animation for the Faculty of Natural Science [Showcase 2021](https://www.imperial.ac.uk/natural-sciences/research/showcases-seminars/2021/). I used [ManimCE](https://www.manim.community/) which is based on Grant Sanderson's excellent [Manim code](https://github.com/3b1b/manim).
 
