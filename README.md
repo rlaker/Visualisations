@@ -1,4 +1,4 @@
-# Animations
+# Visualisations
 
 Code for animations I have made, which can be seen on my [website](https://www.ronanlaker.com/animations/).
 
