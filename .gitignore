@@ -1,0 +1,6 @@
+media/videos/*
+media/Tex/*
+media/texts/*
+media/images/*
+Interactive Orbits/bepi_kernels/*
+**/*.pyc
