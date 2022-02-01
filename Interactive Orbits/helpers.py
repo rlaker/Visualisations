@@ -60,8 +60,13 @@ def wrap(arr, difference = 340):
 
     return arr
 
+
 def add_sc(fig, df, label, colour):
-    
+    by_default = ['PSP', 'Solar Orbiter']
+    if label not in by_default:
+        is_visible = 'legendonly'
+    else:
+        is_visible = True
     fig.add_trace(
                 go.Scatter(
                     #make a date that is not visible
@@ -74,7 +79,8 @@ def add_sc(fig, df, label, colour):
                         color= colour,
                         size = 20,# one of plotly colorscales
                         symbol= 'circle'),
-                    showlegend=True))   
+                    showlegend=True,
+                    visible=is_visible))   
     
     times = df.index
     radii = df['Radius'].values/(const.R_sun.to(u.km))
@@ -86,6 +92,7 @@ def add_sc(fig, df, label, colour):
         name = f'{label} Radius',
         text = text_list,
         showlegend = False,
+        visible=is_visible,
         legendgroup = label,
         hovertemplate=
             "R: %{y:.2f} AU<br>" +
@@ -100,6 +107,7 @@ def add_sc(fig, df, label, colour):
         name = f'{label} Latitude',
         hovertemplate= "%{y:.1f} degrees<br>",
         showlegend = False,
+        visible=is_visible,
         legendgroup = label,
         line=dict(color=colour, width=2),
     ), row=2, col=1)
@@ -110,6 +118,7 @@ def add_sc(fig, df, label, colour):
         name = f'{label} Longitude',
         hovertemplate= "%{y:.0f} degrees<br>",
         showlegend = False,
+        visible=is_visible,
         legendgroup = label,
         line=dict(color=colour, width=2),
     ), row=3, col=1)
@@ -141,6 +150,7 @@ def add_sc(fig, df, label, colour):
         y=mod_300,
         legendgroup = label,
         showlegend = False,
+        visible=is_visible,
         fill=None,
         hoverinfo= 'none',
         line=dict(color=colour, width=0),
@@ -151,6 +161,7 @@ def add_sc(fig, df, label, colour):
         y=mod_700,
         legendgroup = label,
         showlegend = False,
+        visible=is_visible,
         fill='tonexty',
         hoverinfo= 'none',
         line=dict(color=colour, width=0),
@@ -164,6 +175,7 @@ def add_sc(fig, df, label, colour):
         name = f'{label} 300 km/s',
         hovertemplate= "%{y:.0f} degrees<br>",
         showlegend = False,
+        visible=is_visible,
         legendgroup = label,
         line=dict(color=colour, width=2),
     ), row=4, col=1)
@@ -176,6 +188,7 @@ def add_sc(fig, df, label, colour):
         name = f'{label} 700 km/s',
         legendgroup = label,
         showlegend = False,
+        visible=is_visible,
         fill=None,
         hovertemplate= "%{y:.0f} degrees<br>",
         line=dict(color=colour, width=2),
