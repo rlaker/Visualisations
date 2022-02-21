@@ -67,6 +67,8 @@ def add_sc(fig, df, label, colour):
         is_visible = 'legendonly'
     else:
         is_visible = True
+        
+    # adds a scatter point for the legend
     fig.add_trace(
                 go.Scatter(
                     #make a date that is not visible
@@ -86,6 +88,7 @@ def add_sc(fig, df, label, colour):
     radii = df['Radius'].values/(const.R_sun.to(u.km))
     text_list = ['{}'.format(value) for value in radii.value]
 
+    # top panel Radius
     fig.append_trace(go.Scatter(
         x=df.index,
         y=df['Radius'].values/u.au.to(u.km),
@@ -101,6 +104,7 @@ def add_sc(fig, df, label, colour):
     
     ), row=1, col=1)
     
+    # Latitude
     fig.append_trace(go.Scatter(
         x=df.index,
         y=df['Carr_lat'].values,
@@ -111,7 +115,7 @@ def add_sc(fig, df, label, colour):
         legendgroup = label,
         line=dict(color=colour, width=2),
     ), row=2, col=1)
-    
+    # Longitude
     fig.append_trace(go.Scatter(
         x=df.index,
         y=wrap(df['Carr_lon'].values),
@@ -144,31 +148,33 @@ def add_sc(fig, df, label, colour):
     mod_700 = np.nan_to_num(mod_700, 0)
     
     random_df = pd.DataFrame(index = mod_dates)
+    # Mapped Longitude fill
+    # fig.append_trace(go.Scatter(
+    #     x=random_df.index,
+    #     y=mod_300,
+    #     legendgroup = label,
+    #     showlegend = False,
+    #     visible=is_visible,
+    #     fill=None,
+    #     # hoverinfo= 'none',
+    #     hovertemplate= "%{y:.0f} degrees<br>",
+    #     line=dict(color=colour, width=0),
+    # ), row=4, col=1)
     
-    fig.append_trace(go.Scatter(
-        x=random_df.index,
-        y=mod_300,
-        legendgroup = label,
-        showlegend = False,
-        visible=is_visible,
-        fill=None,
-        hoverinfo= 'none',
-        line=dict(color=colour, width=0),
-    ), row=4, col=1)
-    
-    fig.append_trace(go.Scatter(
-        x=random_df.index,
-        y=mod_700,
-        legendgroup = label,
-        showlegend = False,
-        visible=is_visible,
-        fill='tonexty',
-        hoverinfo= 'none',
-        line=dict(color=colour, width=0),
-    ), row=4, col=1)
+    # fig.append_trace(go.Scatter(
+    #     x=random_df.index,
+    #     y=mod_700,
+    #     legendgroup = label,
+    #     showlegend = False,
+    #     visible=is_visible,
+    #     fill='tonexty',
+    #     # hoverinfo= 'none',
+    #     hovertemplate= "%{y:.0f} degrees<br>",
+    #     line=dict(color=colour, width=0),
+    # ), row=4, col=1)
     
     
-
+    # mapped longitude line
     fig.append_trace(go.Scatter(
         x=df.index,
         y=wrap(df['Mapped_300'].values.copy(), 90),
